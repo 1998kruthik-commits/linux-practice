@@ -1,0 +1,19 @@
+#!/bin/bash
+#Author - Kruthik
+#Date - 
+#Description -
+
+echo "Enter name (file/directory):"
+read name
+
+if [ -f "$name" ]
+then
+    echo "$name is a regular file"
+else
+    if [ -d "$name" ]
+    then
+        echo "$name is a directory"
+    else
+        echo "$name does not exist"
+    fi
+fi
