@@ -1,0 +1,16 @@
+#!/bin/bash
+#Author - Kruthik
+#Date - 
+#Description -
+
+# Print all arguments
+echo "All arguments: $*"
+
+# Print current process ID
+echo "Current script PID: $$"
+
+# Run a background process
+sleep 5 &
+
+# Print background process ID
+echo "Background process PID: $!"
