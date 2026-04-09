@@ -1,0 +1,7 @@
+fact=1
+
+for i in {1..5}
+do
+  fact=$((fact * i))
+  echo "$i = $fact"
+done

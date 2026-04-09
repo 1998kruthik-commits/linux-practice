@@ -1,0 +1,17 @@
+for i in {1..10}
+
+do
+  expr=""
+  fact=1
+
+  for j in $(seq 1 $i)
+  do
+    fact=$((fact * j))
+    expr+="$j"
+    if [ $j -lt $i ]; then
+      expr+="*"
+    fi
+  done
+
+  echo "$i = $expr = $fact"
+done
